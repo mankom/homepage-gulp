@@ -1,16 +1,66 @@
 @import "_normalize";
 @import "_variables";
 
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 body {
-  color: $yellow;
-  background: $violet;
+	background: $pink;
+	background: linear-gradient(225deg, rgba(234, 99, 140, 1) 0%, rgba(254, 254, 254, 1) 33%, rgba(254, 254, 254, 1) 89%, rgba(8, 3, 87, 1) 100%);
+	color: #190E4F;
+	width: 100%;
+  max-width: 35em;
+	margin: 0.8em auto;
+}
+
+.about-me{
+  &__header{
+    color: $dark-blue;
+  }
+  &__link{
+    color: $blue;
+    font-size: 0.65rem;
+  }
+}
+
+
+
+.diary{
+  &__header{
+    color: $dark-blue;
+  }
+}
+
+.header{
+  &__title{
+    color: $dark-blue;
+    text-align: center;
+  }
+}
+
+.hobby{
+  &__header{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 0.8em;
+    margin-bottom: 0.5em;
+  }
+  &__list-unordered{
+    list-style-type: square;
+    margin-top: 0.5em;
+    margin-left: 1.2em;
+  }
+  &__list-ordered{
+    list-style-type: georgian;
+  }
+}
+
+.week{
+  &__header{
+    color: $magenta;
+    margin-top: 1.5em;
+    margin-left: 1em;
+  }
+  &__link{
+    color: $blue;
+    font-size: 0.65rem;
+  }
 }
