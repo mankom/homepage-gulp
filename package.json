@@ -1,7 +1,7 @@
 {
   "name": "wtf-gulp-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "`npm install -g gulp-cli`",
   "main": "index.js",
   "scripts": {
     "predeploy": "gulp build",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/maciejkorsan/wtf-gulp-starter.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "mm",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/maciejkorsan/wtf-gulp-starter/issues"

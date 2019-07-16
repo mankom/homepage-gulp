@@ -5,6 +5,7 @@ body {
 	background: $pink;
 	background: linear-gradient(225deg, rgba(234, 99, 140, 1) 0%, rgba(254, 254, 254, 1) 33%, rgba(254, 254, 254, 1) 89%, rgba(8, 3, 87, 1) 100%);
 	color: $violet;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0.8em auto;
   max-width: 35em;
   width: 100%;
@@ -15,29 +16,43 @@ body {
   flex-direction: column;
   &__header{
     color: $dark-blue;
+    margin-top: 2em;
   }
   &__link{
+    align-self: flex-end;
     color: $blue;
     font-size: 0.8rem;
-    align-self: flex-end;
   }
   &__paragraph{
     margin: 0;
   }
 }
 
+.body{
+  &__header{
+    background: white;
+    box-sizing: border-box;
+    left: 0;
+    padding: 0.4em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
+
 .days{
+  align-self: stretch;
   display: grid;
   grid-gap: 0.8em;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 1.6em;
+  margin: 1em 0;
   &__day{
     background: rgba(8, 3, 87, 0.8);
     border-radius: 0.4em;
     color: $magenta;
-    padding: 0.8em;
     display: flex;
     flex-direction: column;
+    padding: 0.8em;
   }
   &__header{
     color: $pink;
@@ -48,10 +63,10 @@ body {
   }
   &__link{
     align-self: flex-end;
-    background: white;
+    background: $pink;
     border-radius: 0.4em;
-    color: $blue;
-    font-size: 0.65rem;
+    color: $dark-blue;
+    font-size: 0.8rem;
     padding: 0.2em 0.4em;
   }
   &__paragraph{
@@ -66,12 +81,15 @@ body {
 .diary{
   &__header{
     color: $dark-blue;
+    margin-bottom: 0.4em;
+    margin-top: 2em;
   }
 }
 
 .header{
   &__title{
     color: $dark-blue;
+    margin-top: 2em;
     text-align: center;
   }
 }
@@ -81,9 +99,7 @@ body {
     align-self: auto;
     font-weight: bold;
     font-size: 1rem;
-    //margin-left: 0.8em;
     margin: 0.5em 1em;
-    //text-transform: uppercase;
   }
   &__list-unordered{
     list-style-type: square;
@@ -123,15 +139,24 @@ body {
 }
 
 .week{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
   &__header{
     color: $magenta;
-    font-size: 0.8rem;
-    margin-top: 1.5em;
-    margin-left: 1em;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin: 1.5em 1em;
     text-transform: uppercase;
   }
   &__link{
+    align-self: flex-end;
     color: $blue;
-    font-size: 0.65rem;
+    font-size: 0.8rem;
+    margin-top: 1em; 
+  }
+  &__paragraph{
+    margin: 0;
   }
 }
