@@ -4,23 +4,64 @@
 body {
 	background: $pink;
 	background: linear-gradient(225deg, rgba(234, 99, 140, 1) 0%, rgba(254, 254, 254, 1) 33%, rgba(254, 254, 254, 1) 89%, rgba(8, 3, 87, 1) 100%);
-	color: #190E4F;
-	width: 100%;
+	color: $violet;
+  margin: 0.8em auto;
   max-width: 35em;
-	margin: 0.8em auto;
+  width: 100%;
 }
 
 .about-me{
+  display: flex;
+  flex-direction: column;
   &__header{
     color: $dark-blue;
   }
   &__link{
     color: $blue;
-    font-size: 0.65rem;
+    font-size: 0.8rem;
+    align-self: flex-end;
+  }
+  &__paragraph{
+    margin: 0;
   }
 }
 
-
+.days{
+  display: grid;
+  grid-gap: 0.8em;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1.6em;
+  &__day{
+    background: rgba(8, 3, 87, 0.8);
+    border-radius: 0.4em;
+    color: $magenta;
+    padding: 0.8em;
+    display: flex;
+    flex-direction: column;
+  }
+  &__header{
+    color: $pink;
+    font-size: 0.8em;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__link{
+    align-self: flex-end;
+    background: white;
+    border-radius: 0.4em;
+    color: $blue;
+    font-size: 0.65rem;
+    padding: 0.2em 0.4em;
+  }
+  &__paragraph{
+    background: white;
+    border-radius: 0.4em;
+    color: $violet;
+    margin: 0.8em 0;
+    padding: 1em;
+  }
+}
 
 .diary{
   &__header{
@@ -37,27 +78,57 @@ body {
 
 .hobby{
   &__header{
-    text-transform: uppercase;
+    align-self: auto;
     font-weight: bold;
     font-size: 1rem;
-    margin-left: 0.8em;
-    margin-bottom: 0.5em;
+    //margin-left: 0.8em;
+    margin: 0.5em 1em;
+    //text-transform: uppercase;
   }
   &__list-unordered{
     list-style-type: square;
-    margin-top: 0.5em;
-    margin-left: 1.2em;
+    margin-top: 0;
+    margin-left: 2em;
   }
   &__list-ordered{
     list-style-type: georgian;
   }
 }
 
+.navigation{
+  &__item{
+    display: inline;
+    margin: 0 0.4em;
+  }
+  &__link{
+    color: $blue;
+    font-size: 0.8em;
+  }
+  &__list{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 0.4em;
+    padding: 0;
+  }
+  &__switcher{
+    display: none;
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    right: 0.6em;
+    top: 0.6em;
+  }
+}
+
 .week{
   &__header{
     color: $magenta;
+    font-size: 0.8rem;
     margin-top: 1.5em;
     margin-left: 1em;
+    text-transform: uppercase;
   }
   &__link{
     color: $blue;
