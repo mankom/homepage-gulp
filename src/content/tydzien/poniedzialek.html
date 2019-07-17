@@ -5,12 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-	<link href="../css/style-subpage.css" rel="stylesheet">
+	<title>Poniedziałek</title>
+	<link rel="stylesheet" href="../css/main.css"/>
 </head>
 
-<body>
-	<header class="header">
+<body class="body">
+	<header class="body__header">
             <nav class="navigation">
                     <ul class="navigation__list navigation__list--js">
                       <li class="navigation__item">
@@ -20,31 +20,34 @@
                   </nav>
 	</header>
 
-	<main class="main">
-		<header class="main-header">
-			<h1 class="main-header__content">
+	<main class="body__main">
+		<header class="header">
+			<h1 class="header__title">
 				Poniedziałek
 			</h1>
 		</header>
 
 		<article class="article">
 			<h2 class="article__title">Wspominki głupie minki</h2>
+			<div class="article__content">
+				<img class="article__image" src="../../assets/img/Pict0135.JPG" alt="Wspominki, głupie minki">
 
-			<img class="article__image" src="../../assets/img/Pict0135.JPG" alt="Wspominki, głupie minki">
-
-			<p class="article__text">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, labore quam quibusdam voluptatum
-				architecto obcaecati consectetur error, velit minima cumque ipsa nam laborum fuga placeat hic ullam.
-				Totam, hic tenetur.
-			</p>
-
-			<footer class="article__footer">
-				Autorem jest Lorem Ipsum.
-			</footer>
+				<p class="article__text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, labore quam quibusdam voluptatum
+					architecto obcaecati consectetur error, velit minima cumque ipsa nam laborum fuga placeat hic ullam.
+					Totam, hic tenetur.
+					<footer class="article__footer">
+						Autorem jest Lorem Ipsum.
+					</footer>
+				</p>
+	
+				
+			</div>
+			
 		</article>
 	</main>
 
-	<footer class="footer">
+	<footer class="body__footer">
 		Strona domowa Marka Mańko, wszystkie treści są efektem szkolenia WTF: Co ten frontend.
 	</footer>
 	<script src="podstrona-main.js"></script>

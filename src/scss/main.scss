@@ -1,8 +1,14 @@
 @import "_normalize";
 @import "_variables";
 
+:root{
+  font-size: 1em;
+  height: auto;
+  min-height: 100%;
+}
+
 body {
-	background: $pink;
+  background: $pink;
 	background: linear-gradient(225deg, rgba(234, 99, 140, 1) 0%, rgba(254, 254, 254, 1) 33%, rgba(254, 254, 254, 1) 89%, rgba(8, 3, 87, 1) 100%);
 	color: $violet;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -31,6 +37,17 @@ body {
   }
 }
 
+.article{
+  &__content{
+    display: flex;
+  }
+  &__title{
+      color: $magenta;
+      font-size: 1.3em;
+      text-transform: uppercase;
+  }
+}
+
 .body{
   &__footer{
     color: $magenta;
@@ -40,7 +57,7 @@ body {
   }
   &__header{
     background: rgb(234,99,140);
-background: linear-gradient(237deg, rgba(234,99,140,0) 0%, rgba(234,99,140,1) 33%, rgba(234,99,140,1) 66%, rgba(234,99,140,0) 100%);
+    background: linear-gradient(237deg, rgba(234,99,140,0) 0%, rgba(234,99,140,1) 33%, rgba(234,99,140,1) 66%, rgba(234,99,140,0) 100%);
     box-sizing: border-box;
     left: 0;
     padding: 0.4em;
