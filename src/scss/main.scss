@@ -5,19 +5,11 @@
   font-size: 1em;
   height: auto;
   min-height: 100%;
+  position: relative;
 }
 
 body {
-  background: $pink;
-	background: linear-gradient(225deg, rgba(234, 99, 140, 1) 0%, rgba(254, 254, 254, 1) 33%, rgba(254, 254, 254, 1) 89%, rgba(8, 3, 87, 1) 100%);
-	color: $violet;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin-bottom: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: $desktop;
-  min-width: 300px;
-  width: auto;
+  //look at class .body
 }
 
 .about-me{
@@ -38,22 +30,57 @@ body {
 }
 
 .article{
-  &__content{
-    display: flex;
-  }
+  position: relative;
   &__title{
-      color: $magenta;
+      color: $pink;
       font-size: 1.3em;
-      text-transform: uppercase;
+      margin-left: 1em;
+      @media (max-width: $mobile){
+        margin-left: 0;
+      }
+  }
+  &__image{
+    float:left; 
+    margin:.3em .6em .3em 0;
+    @media (max-width: $mobile){
+      display: flex;
+      float: none;
+      margin: 1em auto;
+      align-self: center;
+    }
+  }
+  &__footer{
+    font-size: .9em;
+    font-style: italic;
+    margin-bottom: 3em;
+    text-align: right;
+  }
+  &__text{
+    text-align: justify;
   }
 }
 
 .body{
+  background: $pink;
+	background: linear-gradient(225deg, rgba(234, 99, 140, 1) 0%, rgba(254, 254, 254, 1) 33%, rgba(254, 254, 254, 1) 83%, rgba(8, 3, 87, 1) 100%);
+	color: $violet;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  height: auto;
+  min-height: 100%;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $desktop;
+  min-width: 300px;
+  width: auto;
   &__footer{
+    bottom: 0;
     color: $magenta;
     font-size: 0.8rem;
     font-style: italic;
-    margin-top: auto;
+    margin-bottom: 1em;
+    padding-top: 3em;
+    position: absolute;
   }
   &__header{
     background: rgb(234,99,140);
@@ -75,7 +102,7 @@ body {
   display: grid;
   grid-gap: 0.8em;
   grid-template-columns: 1fr 1fr;
-  margin: 1em 0;
+  margin-bottom: 3em;
   &__day{
     background: rgba(8, 3, 87, 0.8);
     border-radius: 0.4em;
@@ -85,7 +112,7 @@ body {
     padding: 0.8em;
   }
   &__header{
-    color: $pink;
+    color: $magenta;
     font-size: 0.8em;
     margin: 0;
     text-align: center;
@@ -93,7 +120,7 @@ body {
   }
   &__link{
     align-self: flex-end;
-    background: $pink;
+    background: $magenta;
     border-radius: 0.4em;
     color: $dark-blue;
     font-size: 0.8rem;
@@ -171,6 +198,16 @@ body {
   }
 }
 
+.sub-header{
+  &__title{
+    color: $magenta;
+    grid-column: 1;
+    margin-top: 2em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
 .week{
   align-items: flex-start;
   display: flex;
@@ -186,10 +223,9 @@ body {
   &__link{
     align-self: flex-end;
     color: $blue;
-    font-size: 0.8rem;
-    margin-top: 1em; 
+    font-size: 0.8rem; 
   }
   &__paragraph{
-    margin: 0;
+    margin: 0 0 1em 0;
   }
 }
