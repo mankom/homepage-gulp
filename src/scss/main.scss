@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap&subset=latin-ext');
 
 :root{
   font-size: 1em;
@@ -117,7 +118,8 @@ body {
   }
   &__header{
     color: $magenta;
-    font-size: 0.8em;
+    font-size: 1em;
+    font-family: 'Barriecito';
     margin: 0;
     text-align: center;
     text-transform: uppercase;
@@ -134,6 +136,7 @@ body {
     background: white;
     border-radius: 0.4em;
     color: $violet;
+    font-family: 'Barriecito';
     margin: 0.8em 0;
     padding: 1em;
   }
