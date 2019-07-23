@@ -6,7 +6,7 @@
 
 
 -----------------------------------------------------------------------------------------
-### Na przykładzie tworzenia strony ćwiczone były:
+### Wykorzystane technologie:
 
 1. **HTML**
     1. BEM
