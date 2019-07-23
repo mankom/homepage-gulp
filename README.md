@@ -3,6 +3,9 @@
 
 ![Marek Mańko - strona domowa](./src/assets/img/screen-strona-domowa-wtf.PNG)
 
+
+
+-----------------------------------------------------------------------------------------
 ### Na przykładzie tworzenia strony ćwiczone były:
 
 1. **HTML**
