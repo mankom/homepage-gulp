@@ -1,5 +1,5 @@
-# Strona domowa
-## Strona powastałą w ramach kursu WTF:Co ten frontend?
+ #                                  Strona domowa
+##              Strona powastała w ramach kursu WTF:Co ten frontend?
 
 ![Marek Mańko - strona domowa](./src/assets/img/screen-strona-domowa-wtf.PNG)
 
