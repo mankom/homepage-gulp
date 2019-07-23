@@ -22,7 +22,7 @@
     3. Node.js
     4. NPM
 
-### Storona powstała przy użyciu narzędzi:
+### Użyte narzędzia:
 
 1. [Visual Studio Code](https://code.visualstudio.com/)
 2. [Git](https://git-scm.com/), [moje konto na github](https://github.com/mankom)
