@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Barriecito|Lato&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -323,6 +324,7 @@ template {
           flex-direction: column; }
   .about-me__header {
     color: #080357;
+    font-family: "Barriecito";
     margin-top: 2em; }
   .about-me__link {
     -ms-flex-item-align: end;
@@ -336,6 +338,7 @@ template {
   position: relative; }
   .article__title {
     color: #EA638C;
+    font-family: "Barriecito";
     font-size: 1.3em;
     margin-left: 1em; }
     @media (max-width: 640px) {
@@ -343,7 +346,7 @@ template {
         margin-left: 0; } }
   .article__image {
     float: left;
-    margin: .3em .6em .3em 0; }
+    margin: 0.3em 0.6em 0.3em 0; }
     @media (max-width: 640px) {
       .article__image {
         display: -webkit-box;
@@ -354,7 +357,7 @@ template {
         -ms-flex-item-align: center;
             align-self: center; } }
   .article__footer {
-    font-size: .9em;
+    font-size: 0.9em;
     font-style: italic;
     margin-bottom: 3em;
     text-align: right; }
@@ -363,11 +366,11 @@ template {
 
 .body {
   background: #EA638C;
-  background: -webkit-linear-gradient(225deg, #ea638c 0%, #fefefe 33%, #fefefe 83%, #080357 100%);
-  background: -o-linear-gradient(225deg, #ea638c 0%, #fefefe 33%, #fefefe 83%, #080357 100%);
-  background: linear-gradient(225deg, #ea638c 0%, #fefefe 33%, #fefefe 83%, #080357 100%);
+  background: -webkit-radial-gradient(circle, rgba(234, 99, 140, 0.01) 66%, #ea638c 100%);
+  background: -o-radial-gradient(circle, rgba(234, 99, 140, 0.01) 66%, #ea638c 100%);
+  background: radial-gradient(circle, rgba(234, 99, 140, 0.01) 66%, #ea638c 100%);
   color: #190E4F;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Lato";
   height: auto;
   min-height: 100%;
   margin-bottom: 1em;
@@ -391,6 +394,7 @@ template {
     background: linear-gradient(237deg, rgba(234, 99, 140, 0) 0%, #ea638c 33%, #ea638c 66%, rgba(234, 99, 140, 0) 100%);
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    font-family: "Barriecito";
     left: 0;
     padding: 0.4em;
     position: fixed;
@@ -427,7 +431,8 @@ template {
     padding: 0.8em; }
   .days__header {
     color: #B33C86;
-    font-size: 0.8em;
+    font-size: 1em;
+    font-family: "Barriecito";
     margin: 0;
     text-align: center;
     text-transform: uppercase; }
@@ -452,11 +457,13 @@ template {
 
 .diary__header {
   color: #080357;
+  font-family: "Barriecito";
   margin-bottom: 0.4em;
   margin-top: 2em; }
 
 .header__title {
   color: #080357;
+  font-family: "Barriecito";
   margin-top: 2em;
   text-align: center; }
 
@@ -464,6 +471,7 @@ template {
   -ms-flex-item-align: auto;
       -ms-grid-row-align: auto;
       align-self: auto;
+  font-family: "Barriecito";
   font-weight: bold;
   font-size: 1rem;
   margin: 0.5em 1em; }
@@ -527,6 +535,7 @@ template {
 
 .sub-header__title {
   color: #B33C86;
+  font-family: "Barriecito";
   -ms-grid-column: 1;
   grid-column: 1;
   margin-top: 2em;
@@ -547,8 +556,8 @@ template {
   margin: 1em 0; }
   .week__header {
     color: #B33C86;
+    font-family: "Barriecito";
     font-size: 1rem;
-    font-weight: bolder;
     margin: 1.5em 1em;
     text-transform: uppercase; }
   .week__link {
