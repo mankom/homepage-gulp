@@ -2,6 +2,42 @@
 @import "_variables";
 @import url("https://fonts.googleapis.com/css?family=Barriecito|Lato&display=swap&subset=latin-ext");
 
+@keyframes move-down{
+  0% {
+    transform: rotateY(0deg)
+		perspective(700px)
+		scale(1);
+    transform-origin: center center;
+  }
+  25% {
+    
+    transform: rotateY(90deg)
+    perspective(300px)
+    scale(1.5);
+	  transform-origin: center center;
+  }
+  50% {
+    
+    transform: rotateY(180deg)
+    perspective(700px)
+    scale(1.5);
+	  transform-origin: center center;
+  }
+  75% {
+    
+    transform: rotateY(270deg)
+    perspective(300px)
+    scale(1.5);
+	  transform-origin: center center;
+  }
+  100% {
+    transform: rotateY(360deg)
+		perspective(700px)
+		scale(1);
+    transform-origin: center center;
+  }
+}
+
 :root {
   font-size: 1em;
   height: auto;
@@ -34,6 +70,7 @@ body {
 .article {
   position: relative;
   &__title {
+    position: inherit;
     color: $pink;
     font-family: "Barriecito";
     font-size: 1.3em;
@@ -43,8 +80,12 @@ body {
     }
   }
   &__image {
+    position: relative;
     float: left;
     margin: 0.3em 0.6em 0.3em 0;
+    &:hover{
+      animation: move-down 5s;
+    }
     @media (max-width: $mobile) {
       display: flex;
       float: none;
@@ -117,13 +158,21 @@ body {
   grid-gap: 0.8em;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 3em;
+  //position: relative;
+  
   &__day {
+    
+    //position: absolute;
     background: rgba(8, 3, 87, 0.8);
     border-radius: 0.4em;
     color: $magenta;
     display: flex;
     flex-direction: column;
     padding: 0.8em;
+    transition: transform .5s ease-in-out;
+    &:hover{
+      transform: scale(1.06);
+    }
   }
   &__header {
     color: $magenta;
@@ -259,6 +308,6 @@ body {
     font-size: 0.8rem;
   }
   &__paragraph {
-    margin: 0 0 1em 0;
+  margin: 0 0 1em 0;
   }
 }
